@@ -3,7 +3,6 @@ const db = require("../db/dbConfig")
 const getAllArticles = async () => {
     try {
         const allArticles = await db.any("SELECT * FROM articles");
-        console.log(allArticles);
         return allArticles
     } catch (error) {
         return error 
@@ -13,7 +12,6 @@ const getAllArticles = async () => {
 const getArticlesById = async (id) => {
     try {
         const article = await db.any(`SELECT * FROM articles WHERE id=$1`, id)
-        console.log(article);
         return article
     } catch (error) {
         return error

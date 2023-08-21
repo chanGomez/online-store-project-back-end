@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
   const allComments = await getAllComments(req.params.articleId);
 
   if (allComments.length === 0) {
-    res.status(404).json({ error: "Not found" });
+    res.status(404).json({ error: "No comments found" });
   } else {
     res.json(allComments);
   }
@@ -73,12 +73,10 @@ router.get("/:articleId/get-all-comments", async (req, res) => {
 
   try {
     const allCommentsById = await getAllCommentsOnArticleId(articleId);
-    console.log(allCommentsById);
 
     if (allCommentsById.length === 0) {
       return res.status(404).json({ error: "Comment not found" });
     } else {
-      console.log(allCommentsById);
       return res.json(allCommentsById);
     }
   } catch (error) {

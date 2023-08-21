@@ -15,7 +15,6 @@ const {
 
 router.get("/", async (req, res) => {
   const allArticles = await getAllArticles();
-  console.log(allArticles);
   if (Array.isArray(allArticles)) {
     res.json(allArticles);
   } else {
