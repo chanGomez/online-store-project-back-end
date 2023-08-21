@@ -4,11 +4,11 @@ INSERT INTO
     articles (name, size, gender, category, color, discription, condition, price, url)
  VALUES
 ('Comme Des Garcons', null , 'unisex', 'bag', 'grey', 
-'This is a 2014 CDG bag', 'good condition', 250, 'url'),
+'This is a 2014 CDG bag', 'good condition', 250, 'https://media-assets.grailed.com/prd/listing/temp/cbd07d1612544cc9a846a72e9839d5e2?h=700&fit=clip&q=40&auto=format'),
 ('Needles Pants', 'Medium', 'men', 'pants', 'black/green', 
-'Some old pants I want to get rid of', 'fair condition', 109,'url'),
+'Some old pants I want to get rid of', 'fair condition', 109,'https://media-assets.grailed.com/prd/listing/temp/cbd07d1612544cc9a846a72e9839d5e2?h=700&fit=clip&q=40&auto=format'),
 ('Catharrt Jacket', 'Large', 'women', 'jacket', 'red', 
-'Vintage carharrt original color was red but now pink', 'good condition', 220, 'url');
+'Vintage carharrt original color was red but now pink', 'good condition', 220, 'https://media-assets.grailed.com/prd/listing/temp/cbd07d1612544cc9a846a72e9839d5e2?h=700&fit=clip&q=40&auto=format');
 
 INSERT INTO 
     comments (article_id, commenter, content)
